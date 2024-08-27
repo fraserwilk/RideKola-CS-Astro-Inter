@@ -4,13 +4,15 @@ import { Icon } from 'astro-icon/components';
 import DarkModeToggle from "@components/DarkModeToggle.astro";
 ---
 
-<!-- ============================================ --><!--                 Navigation                   --><!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
 <header id="cs-navigation">
   <div class="cs-container">
     <!--Nav Logo-->
     <a href="/" class="cs-logo" aria-label="back to home">
       <img
-        src="/assets/svgs/logo-black.svg"
+        src="/assets/svgs/ridekola-logo.svg"
         alt=""
         width="210"
         height="29"
@@ -89,8 +91,7 @@ import DarkModeToggle from "@components/DarkModeToggle.astro";
       </div>
     </nav>
     <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us</a>
-    <!--Dark Mode toggle: remove component if you don't want to enable a dark mode toggle-->
-    <DarkModeToggle />
+
   </div>
 </header>
 
@@ -110,7 +111,7 @@ import DarkModeToggle from "@components/DarkModeToggle.astro";
 
   #cs-navigation {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -228,7 +229,7 @@ import DarkModeToggle from "@components/DarkModeToggle.astro";
     .cs-line {
       width: 100%;
       height: 2px;
-      background-color: #1a1a1a;
+      background-color: var(--primary);
       border-radius: 2px;
       position: absolute;
       left: 50%;
@@ -666,7 +667,7 @@ import DarkModeToggle from "@components/DarkModeToggle.astro";
 @media only screen and (min-width: 64rem) {
   #cs-navigation {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -677,8 +678,8 @@ import DarkModeToggle from "@components/DarkModeToggle.astro";
     z-index: 10000;
 
     .cs-container {
-      width: 100%;
-      max-width: (1280/16rem);
+      width: 90%;
+      max-width: 2500px;
       margin: auto;
       display: flex;
       justify-content: flex-end;
@@ -718,7 +719,7 @@ import DarkModeToggle from "@components/DarkModeToggle.astro";
       justify-content: flex-start;
       align-items: center;
       /* 20px - 36px */
-      gap: clamp(1.25rem, 2.6vw, 2.25rem);
+      gap: clamp(1.25rem, 1.8vw, 2.25rem);
     }
 
     .cs-li {

@@ -1,0 +1,242 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import CTA from "@components/CTA.astro";
+import Landing from "@components/Landing.astro";
+---
+
+<BaseLayout
+  title="Mission page | Our Mission | RideKola"
+  description="What drives us at RideKola"
+>
+  <section id="header" class="header">
+    <div class="container">
+      <div class="grid">
+        <div class="text-box">
+            <h1 class="heading-box">
+              Social impact
+            </h1>
+          </div>
+          <img
+            class="image"
+            src="/assets/images/social-impact.jpg"
+            alt="RideKola skyline at night"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="body-333">
+    <div class="container">
+
+        <h1 class="main-title">
+            We build communities through transport equity.
+        </h1>
+
+        <div class="flex-container">
+            <div class="circle"></div>
+            <div class="text-box">
+                <p>In a large <a href="https://www.nytimes.com/2015/05/07/upshot/transportation-emerges-as-crucial-to-escaping-poverty.html#:~:text=In%20a%20large%2C%20continuing%20study,there%20moving%20up%20the%20ladder" target="_blank">study of upward mobility</a> based at Harvard (USA), commuting time has emerged as the single strongest factor in the odds of escaping poverty.</p>
+                <p>The longer an average commute, the worse the chances of low income families moving up the economic ladder.</p>
+                <p>Recent ABS and RACV data shows that:</p>
+                <ul>
+                    <li>The average Australian household now spends close to $450 per week on transport expenses</li>
+                    <li>Household transport spending increased 9.4% in 2023</li>
+                    <li>The lowest income earners spend in excess of 20% of their income on transport</li>
+                </ul>
+                <p>RideKola builds on the work of NYU Stern's <a href="https://www.equitablecommute.org/" target="_blank">Equitable Commute Project</a> to deliver eBike solutions that help alleviate these financial pressures.
+                <br>In addition, our fleets enhance mental and physical wellbeing for communities and organisations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <CTA />
+</BaseLayout>
+
+<style>
+
+#header {
+    background-color: #fff;
+
+    .container {
+          width: 90%;
+          max-width: 2500px; /* Equivalent to 2xl:max-w-8xl */
+          margin-left: auto;
+          margin-right: auto;
+          padding: 32px 32px 16px; /* Combines pt-24 and pb-4 */
+      }
+
+      .grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 16px; /* Equivalent to gap-4 */
+          align-items: end;
+      }
+
+      .text-box {
+          background-color: #305252; 
+          padding: 40px; /* Equivalent to p-10 */
+          height: 100%;
+          border-radius: 16px; /* Equivalent to rounded-2xl */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .text-box h1 {
+          font-size: 1.875rem; /* Equivalent to text-3xl */
+          line-height: 2.25rem;
+          letter-spacing: -0.025em; /* Equivalent to tracking-tighter */
+          font-weight: bold;
+          color: white;
+          text-align: left;
+      }
+
+      .image {
+          aspect-ratio: 4/1;
+          object-fit: cover;
+          border-radius: 16px; /* Equivalent to rounded-2xl */
+          height: 100%;
+          width: 100%;
+      }
+
+      @media screen and (min-width: 768px) {
+          .container {
+            padding-top: 8rem;
+              padding-left: 1rem;
+              padding-right: 1rem;
+          }
+      }
+
+      @media screen and (min-width: 1024px) {
+          .container {
+              padding-top: 8rem; /* Equivalent to lg:pt-32 */
+          }
+
+          .grid {
+              grid-template-columns: 1fr 2fr;
+          }
+
+          .text-box {
+              padding: 16px; /* Equivalent to lg:p-4 */
+          }
+      }
+
+      @media screen and (max-width: 767px) {
+        padding-top: 6rem;
+      }
+  }
+
+#body-333 {
+    .container {
+            width: 90%;
+            max-width: 2500px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-divider {
+            position: relative;
+            max-width: 320px;
+        }
+
+        .divider-line {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            border-top: 1px solid var(--secondary);
+        }
+
+        .divider-text {
+            position: relative;
+            display: inline-block;
+            background-color: white;
+            padding-right: 8px;
+            font-size: 0.875rem;
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        .main-title {
+            font-size: 2.25rem;
+            line-height: 1.2;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+
+        .flex-container {
+            display: flex;
+            margin: 64px 0;
+            padding: 16px 32px;
+        }
+
+        .circle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: #305252;
+            flex-shrink: 0;
+            align-self: center;
+            margin-right: 32px;
+        }
+
+        .text-box {
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            background-color: #f8fafc;
+            padding: 8px 20px;
+        }
+
+        .text-box p {
+            color: var(--secondary);
+            font-size: 1.125rem;
+            line-height: 1.75;
+            margin-bottom: 32px;
+        }
+
+        .text-box ul {
+            padding-bottom: 2rem;
+            padding-left: 2rem;;
+
+            li {
+            padding-left: 1rem;
+            font-size: 1.125rem;
+            color: var(--secondary);
+            }
+        }
+
+        .text-box a {
+            color: var(--primary);
+            text-decoration:none;
+            transition: color 0.3s;
+        }
+
+        .text-box a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .circle {
+                display: none;
+            }
+
+            .main-title {
+                font-size: 1.875rem;
+            }
+
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .circle {
+                margin-bottom: 16px;
+            }
+        }
+    }
+</style>
+

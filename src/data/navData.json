@@ -5,32 +5,28 @@
     "children": []
   },
   {
-    "key": "About Us",
+    "key": "About",
     "url": "/about/",
     "children": []
   },
   {
-    "key": "Projects",
-    "url": "/projects/",
-    "children": [
-      {
-        "key": "Project 1",
-        "url": "/projects/project-1/"
-      },
-      {
-        "key": "Project 2",
-        "url": "/projects/project-2/"
-      }
-    ]
-  },
-  {
-    "key": "Reviews",
-    "url": "/reviews/",
+    "key": "Mission",
+    "url": "/mission/",
     "children": []
   },
   {
-    "key": "Blog",
-    "url": "/blog/",
+    "key": "Circular Economy",
+    "url": "/circular-economy/",
+    "children": []
+  },
+  {
+    "key": "eBike Hubs",
+    "url": "/ebikehubs/",
+    "children": []     
+  },
+  {
+    "key": "App & Locks",
+    "url": "/app-locks/",
     "children": []     
   }
 ]

@@ -8,17 +8,19 @@ import Landing from "@components/Landing.astro";
   title="About page | About Us | RideKola"
   description="Who we are and what we do"
 >
-  <section id="about" class="about">
+  <section id="circ-econ">
     <div class="container">
       <div class="grid">
         <div class="text-box">
             <h1 class="heading-box">
-              Who we are and what we do.
+                Reduce<br />
+                Reuse<br />
+                Recycle
             </h1>
           </div>
           <img
             class="image"
-            src="/assets/images/skyline.jpg"
+            src="/assets/images/city-nightscape.jpg"
             alt="RideKola skyline"
           />
         </div>
@@ -29,27 +31,42 @@ import Landing from "@components/Landing.astro";
   <section id="body-333">
     <div class="container">
         <p class="main-text">
-            Enhancing communities with our time, our energy, our capital, our team, our networks, and our conversations.
+            Communities and the environment are central to all that we do.
         </p>
 
         <div class="flex-container">
-            <div class="circle yellow-200"></div>
+            <div class="circle green-200"></div>
             <div class="text-box">
-                <p>We source fully refurbished bikes. Bikes that would otherwise go to landfill. In the Netherlands (where we source our gorgeous Dutch "Omafiets"), two bikes per minute are discarded every day, every year. Through our European and Australian partners, we give these old beauties a new lease of life, ensuring they are safe, reliable and fun to ride.</p>
+                <p>Our 'eBike fleet' commercial model allows us to keep our bikes in good working order for longer. 
+                    We start with high quality, fully recycled and reimagined Dutch bikes, and then service, 
+                    maintain and repair them to extend their lifespan. With our RideKola app and smart-locks, 
+                    you'll need fewer bikes to serve more of your community.
+                </p>
             </div>
         </div>
 
         <div class="flex-container">
-            <div class="circle yellow-400"></div>
+            <div class="circle green-400"></div>
             <div class="text-box">
-                <p>With our RideKola app locking system we deploy eBike fleets into a range of settings. This Mobility as a Service (MaaS) solution, means the end-user gets all the benefits of ownership without the capital outlay or ongoing maintenance, resulting in more short trips with the ease and convenience of a fully equipped, premium eBike.</p>
+                <p>Replacing a 2,000kg car with a 20kg eBike transforms efficiency. 
+                    25% of all transport emissions come from trips that are less than 8km; a distance ideally suited to eBikes. 
+                    With 50% of all car trips less than 5km, there's so much opportunity to change-up those trips and transform transport.
+                    </p>
             </div>
         </div>
 
         <div class="flex-container">
-            <div class="circle yellow-600"></div>
+            <div class="circle green-600"></div>
             <div class="text-box">
-                <p>We seek out partnerships to expand our sphere of impact. Our ultimate goal is to use RideKola as a force for good. We use the B-Corp Declaration of Interdependence as a basis for our approach and continual improvement. Our Australian partner, Good Cycles, is a social enterprise helping empower young people facing barriers to work.</p>
+                <p>Similar to Patagonia's 
+                    <a 
+                    href="https://www.patagonia.com/stories/dont-buy-this-jacket-black-friday-and-the-new-york-times/story-18615.html" 
+                    style="z-index:999;" 
+                    class="text-green-400 text-l hover:text-pink-500 duration-300" 
+                    target="_blank">"Don't buy this jacket"</a> 
+                    campaign, at RideKola we want you to enjoy our eBikes without the need to buy them. 
+                    When you find you no longer need the eBike fleet, we'll refurbish and redeploy them. 
+                    Less really is more!</p>
             </div>
         </div>
     </div>
@@ -74,8 +91,8 @@ import Landing from "@components/Landing.astro";
 
 <style>
 
-  #about {
-    background-color: #fff;
+  #circ-econ {
+        background-color: #fff;
 
       .container {
           width: 90%;
@@ -93,7 +110,7 @@ import Landing from "@components/Landing.astro";
       }
 
       .text-box {
-          background-color: #b45309; /* Equivalent to bg-yellow-700 */
+          background-color: #568259;
           padding: 40px; /* Equivalent to p-10 */
           height: 100%;
           border-radius: 16px; /* Equivalent to rounded-2xl */
@@ -103,13 +120,12 @@ import Landing from "@components/Landing.astro";
       }
 
       .text-box h1 {
-          font-size: 1.875rem; 
+          font-size: 1.875rem; /* Equivalent to text-3xl */
           line-height: 2.25rem;
-          letter-spacing: -0.025em;
+          letter-spacing: -0.025em; /* Equivalent to tracking-tighter */
           font-weight: bold;
           color: white;
           text-align: left;
-          text-wrap: balance;
       }
 
       .image {
@@ -152,7 +168,7 @@ import Landing from "@components/Landing.astro";
         width: 90%;
         max-width: 2500px;
         margin: 0 auto;
-        padding: 16px 32px;
+        padding: 1rem 2rem;
       }
 
       .main-text {
@@ -165,8 +181,8 @@ import Landing from "@components/Landing.astro";
 
       .flex-container {
           display: flex;
-          margin-top: 2rem;
-          margin-bottom: 2rem;
+          margin-top: 32px;
+          margin-bottom: 32px;
           padding: 0.5rem 2rem;
       }
 
@@ -179,9 +195,9 @@ import Landing from "@components/Landing.astro";
           margin-right: 32px;
       }
 
-      .yellow-200 { background-color: #fef08a; }
-      .yellow-400 { background-color: #facc15; }
-      .yellow-600 { background-color: #ca8a04; }
+      .green-200 { background-color: #9dbe9f; }
+      .green-400 { background-color: #78a57b; }
+      .green-600 { background-color: #568259; }
 
       .text-box {
           border: 1px solid #e2e8f0;
@@ -248,7 +264,7 @@ import Landing from "@components/Landing.astro";
 
       @media (max-width: 768px) {
           .circle {
-              display:none;
+              display: none;
           }
 
           .main-text, .section-title {

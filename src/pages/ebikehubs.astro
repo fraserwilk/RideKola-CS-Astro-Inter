@@ -1,0 +1,284 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import CTA from "@components/CTA.astro";
+import Landing from "@components/Landing.astro";
+---
+
+<BaseLayout
+  title="eBike Hubs | Share and enjoy a fleet of eBikes from RideKola | RideKola"
+  description="Access via the RideKola app and smart-lock system. Good for communities. Good for the planet."
+>
+  <section id="circ-econ">
+    <div class="container">
+      <div class="grid">
+        <div class="text-box">
+            <h1 class="heading-box">
+                eBike Hubs<br />
+                Simple<br />
+                Smart<br />
+                Sustainable
+            </h1>
+          </div>
+          <img
+            class="image"
+            src="/assets/images/ebike-hubs.jpg"
+            alt="RideKola skyline"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="body-333">
+    <div class="container">
+        <p class="main-text">
+            Making it easy to share and enjoy a fleet of eBikes.
+        </p>
+        <p class="subtitle-text">
+            Access via the RideKola app and smart-lock system. 
+                    Good for communities. 
+                    Good for the planet.
+        </p>
+
+
+
+    </div>
+</section>
+
+<section id="body-333">
+    <div class="container">
+        
+        <img class="section-image" src="/assets/svgs/ebike-hub.svg" alt="eBike Hub">
+    </div>
+</section>
+
+  <CTA />
+</BaseLayout>
+
+<style>
+
+  #circ-econ {
+    background-color: #fff;
+
+    .container {
+        width: 90%;
+        max-width: 2500px; /* Equivalent to 2xl:max-w-8xl */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 32px 32px 16px; /* Combines pt-24 and pb-4 */
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px; /* Equivalent to gap-4 */
+        align-items: end;
+    }
+
+    .text-box {
+        background-color: #3c98b9;
+        padding: 40px; /* Equivalent to p-10 */
+        height: 100%;
+        border-radius: 16px; /* Equivalent to rounded-2xl */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-box h1 {
+        font-size: 1.875rem; /* Equivalent to text-3xl */
+        line-height: 2.25rem;
+        letter-spacing: -0.025em; /* Equivalent to tracking-tighter */
+        font-weight: bold;
+        color: white;
+        text-align: left;
+    }
+
+    .image {
+        aspect-ratio: 4/1;
+        object-fit: cover;
+        border-radius: 16px; /* Equivalent to rounded-2xl */
+        height: 100%;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        .container {
+        padding-top: 8rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .container {
+            padding-top: 8rem; /* Equivalent to lg:pt-32 */
+        }
+
+        .grid {
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .text-box {
+            padding: 16px; /* Equivalent to lg:p-4 */
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+    padding-top: 6rem;
+    }
+}
+
+#body-333 {
+      .container {
+        width: 90%;
+        max-width: 2500px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+      }
+
+      .main-text {
+          font-size: 2.25rem;
+          line-height: 1.2;
+          font-weight: 600;
+          color: var(--secondary);
+          margin-bottom: 64px;
+      }
+
+      .subtitle-text {
+        font-size: 1.5rem;
+        letter-spacing: -0.025em; 
+        margin-top: 2rem;
+    }
+
+  @media (min-width: 1024px) {
+    .subtitle-text {
+      font-size: 1.5rem;
+    }
+  }
+
+      .flex-container {
+          display: flex;
+          margin-top: 32px;
+          margin-bottom: 32px;
+          padding: 0.5rem 1.5rem;
+      }
+
+      .circle {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          flex-shrink: 0;
+          align-self: center;
+          margin-right: 32px;
+      }
+
+      .blue-200 { background-color: #74b9d2; }
+      .blue-400 { background-color: #56aac8; }
+      .blue-600 { background-color: #3c98b9; }
+
+      .text-box {
+          border: 1px solid #e2e8f0;
+          border-radius: 24px;
+          background-color: #f8fafc;
+          padding: 0.5rem 2rem;
+      }
+
+      .text-box p {
+          color: var(--secondary);
+          font-size: 1.125rem;
+          line-height: 1.75;
+      }
+
+      .section-divider {
+          position: relative;
+          max-width: 320px;
+          margin-top: 96px;
+      }
+
+      .divider-line {
+          border-top: 1px solid var(--secondary);
+          position: absolute;
+          top: 50%;
+          width: 100%;
+      }
+
+      .divider-text {
+          position: relative;
+          display: inline-block;
+          background-color: white;
+          padding-right: 8px;
+          font-size: 0.875rem;
+          color: var(--secondary);
+          font-weight: 600;
+      }
+
+      .section-title {
+          font-size: 3rem;
+          line-height: 1.2;
+          font-weight: bold;
+          color: var(--secondary);
+          margin-top: 96px;
+      }
+
+      .section-image {
+          width: 100%;
+          max-height: 80vh;
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+          object-fit: cover;
+          object-position: top;
+          margin: 4rem 0;
+      }
+
+      .fade-in {
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out;
+      }
+
+      .fade-in.visible {
+          opacity: 1;
+      }
+
+      @media (max-width: 768px) {
+
+        .container .section-image {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+          .circle {
+              width: auto;
+              height: auto;
+          }
+
+          .main-text, .section-title {
+              font-size: 1.875rem;
+          }
+      }
+    }
+
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const fadeInElements = document.querySelectorAll('.fade-in');
+
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                  observer.unobserve(entry.target);
+              }
+          });
+      });
+
+      fadeInElements.forEach(element => {
+          observer.observe(element);
+      });
+  });
+</script>
