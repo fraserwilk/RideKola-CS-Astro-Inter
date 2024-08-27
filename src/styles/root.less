@@ -12,7 +12,7 @@
     --primaryLight: hsl(80, 60%, 40%);
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
-    --headerColor: #616468;
+    --headerColor: #4f5154;
     --bodyTextColor: #616468;
     --bodyTextColorWhite: #fafbfc;
 
@@ -39,11 +39,11 @@
 
   .cs-title {
     font-size: var(--headerFontSize);
+    color: var(--headerColor);
     font-weight: 600;
     line-height: 1.2em;
     text-align: left;
     margin: 1rem 0;
-    color: var(--headerColor);
     position: relative;
   }
 
@@ -287,6 +287,46 @@
   }
 }
 
+/* Artist credit */
+.credit {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 0.2rem;
+  font-size: 0.7rem;
+  position: relative;
+  color: var(--primary);
+}
 
+.credit a {
+  font-size: 0.8rem;
+  // text-decoration: none;
+  line-height: 1.5rem;
+  padding-left: 0.2rem;
+  color: var(--primary);
+}
+
+
+.credit::after {
+  content: '';
+  position: absolute;
+  width: 10%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.credit:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
 
 
