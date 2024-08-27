@@ -68,9 +68,13 @@ const currentYear = getCurrentYear()
   </div>
 
   <div class="credit">
-    <span>Designed and Hand Coded by</span>
-    <a href="https://truweb.com.au" target="_blank" rel="noopener">TruWeb</a>
-    <span class="copyright">| &copy; {currentYear} RideKola</span>
+    <div class="acknowledgment">
+      RideKola respectfully acknowledges the Traditional Owners of this land, 
+      the people of the Kulin Nations. 
+      We pay our respect to their Elders, past and present. 
+      We acknowledge and uphold their continuing relationship to this land.
+    </div>
+    <span class="copyright">&copy; {currentYear} <a href="https://ridekola.com.au" target="_blank" rel="noopener">RideKola</a> - the eBike that doesn't cost the earth</span>
   </div>
 </footer>
 
@@ -216,6 +220,13 @@ const currentYear = getCurrentYear()
         }
       }
 
+      .acknowledgment {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        text-wrap: balance;
+        padding-bottom: 1rem;
+      }
+
       .copyright {
         font-size: (16/16rem);
         display: block;
@@ -229,8 +240,8 @@ const currentYear = getCurrentYear()
   #footer {
     font-size: ~"min(1.2vw, 1em)";
     .container {
-      width: 96%;
-      max-width: (1320/16rem);
+      width: 90%;
+      max-width: 2500px;
       margin: auto;
       padding: 0;
       display: flex;
