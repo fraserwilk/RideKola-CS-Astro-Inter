@@ -32,7 +32,7 @@ import Landing from "@components/Landing.astro";
   <section id="body-333">
     <div class="container">
 
-        <h1 class="main-title">
+        <h1 class="cs-title">
             Easy and stress free bike sharing.
         </h1>
 
@@ -45,7 +45,8 @@ import Landing from "@components/Landing.astro";
                     />
                 </div>
                 <div class="text-box">
-                    <p>We source fully refurbished bikes. Bikes that would otherwise go to landfill. In the Netherlands (where we source our gorgeous Dutch "Omafiets"), two bikes per minute are discarded every day, every year. Through our European and Australian partners, we give these old beauties a new lease of life, ensuring they are safe, reliable and fun to ride.</p>
+                    <p>Download the RideKola app from the Google Play or Apple Store
+                    </p>
                 </div>
             </div>
     
@@ -58,7 +59,7 @@ import Landing from "@components/Landing.astro";
                 />
                 </div>
                 <div class="text-box">
-                    <p>With our RideKola app locking system we deploy eBike fleets into a range of settings. This Mobility as a Service (MaaS) solution, means the end-user gets all the benefits of ownership without the capital outlay or ongoing maintenance, resulting in more short trips with the ease and convenience of a fully equipped, premium eBike.</p>
+                    <p>Create your own personal, secure account & verify your profile</p>
                 </div>
             </div>
     
@@ -71,7 +72,7 @@ import Landing from "@components/Landing.astro";
                 />
                 </div>
                 <div class="text-box">
-                    <p>We seek out partnerships to expand our sphere of impact. Our ultimate goal is to use RideKola as a force for good. We use the B-Corp Declaration of Interdependence as a basis for our approach and continual improvement. Our Australian partner, Good Cycles, is a social enterprise helping empower young people facing barriers to work.</p>
+                    <p>Reserve and ride </p>
                 </div>
             </div>
         </div>
@@ -185,7 +186,7 @@ import Landing from "@components/Landing.astro";
             font-size: 2.25rem;
             line-height: 1.2;
             font-weight: bold;
-            color: var(--secondary);
+            color: var(--headerColor);
             padding-bottom: 2rem;
         }
 
@@ -193,6 +194,7 @@ import Landing from "@components/Landing.astro";
             display: flex;
             margin: 0;
             padding: 1rem 2rem;
+            align-items:center;
         }
 
         .circle {
@@ -201,7 +203,7 @@ import Landing from "@components/Landing.astro";
           border-radius: 50%;
           flex-shrink: 0;
           align-self: center;
-          margin-right: 32px;
+          margin-right: 2rem;
       }
 
       .magenta-200 { background-color: #b86589; }
@@ -209,17 +211,22 @@ import Landing from "@components/Landing.astro";
       .magenta-600 { background-color: #8c4061; }
 
         .text-box {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 1280px;
+            min-height: 6rem;
             border: 1px solid #e2e8f0;
             border-radius: 24px;
             background-color: #f8fafc;
-            padding: 8px 20px;
+            padding: 1rem 3rem;
         }
 
         .text-box p {
-            color: var(--secondary);
+            color: var(--bodyTextColor);
             font-size: 1.125rem;
             line-height: 1.75;
-            margin-bottom: 32px;
+            margin-bottom: 0;
         }
 
         .text-box ul {
