@@ -8,8 +8,8 @@ export default defineConfig({
     '/faq': '/about',
     '/index.php': '/',
     '/home': '/',
-    '/terms-and-conditions': '/info/terms',
-    '/index.php/terms-and-conditions': '/info/terms',
+    '/terms-and-conditions': '/terms',
+    '/index.php/terms-and-conditions': '/terms',
     '/privacy-statement': '/privacy',
     '/index.php/faq': '/about',
     '/sendContactForm': '/contact'
