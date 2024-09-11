@@ -3,13 +3,6 @@ import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  vite: {
-    resolve: {
-      alias: {
-        '@layouts': '/src/layouts',
-      },
-    },
-  },
   integrations: [icon(), sitemap()],
   redirects: {
     '/faq': '/about',
