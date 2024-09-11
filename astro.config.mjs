@@ -10,8 +10,8 @@ export default defineConfig({
     '/home': '/',
     '/terms-and-conditions': '/info/terms',
     '/index.php/terms-and-conditions': '/info/terms',
-    '/privacy-statement': '/info/privacy',
-    '/privacy/': '/info/privacy',
+    '/privacy-statement': '/privacy',
+    '/privacy/': '/privacy',
     '/index.php/faq': '/about',
     '/sendContactForm': '/contact'
   }
