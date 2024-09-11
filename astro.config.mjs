@@ -11,7 +11,6 @@ export default defineConfig({
     '/terms-and-conditions': '/info/terms',
     '/index.php/terms-and-conditions': '/info/terms',
     '/privacy-statement': '/privacy',
-    '/privacy/': '/privacy',
     '/index.php/faq': '/about',
     '/sendContactForm': '/contact'
   }
